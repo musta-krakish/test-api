@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиво</title>
+</head>
+<body>
+    <h1>Топ 50 Слов IDF</h1>
+    <table border="1">
+        <tr>
+            <th>Слово</th>
+            <th>IDF</th>
+        </tr>
+        {% for word, idf in sorted_idf %}
+        <tr>
+            <td>{{ word }}</td>
+            <td>{{ idf }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
